@@ -12,7 +12,7 @@ class Pointers extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => CounterCubit(),
-      child: MaterialApp(
+      child:const MaterialApp(
         debugShowCheckedModeBanner: false,
         home: HomePage(),
       ),
@@ -21,7 +21,7 @@ class Pointers extends StatelessWidget {
 }
 
 class HomePage extends StatelessWidget {
-  HomePage({
+ const HomePage({
     super.key,
   });
   @override
